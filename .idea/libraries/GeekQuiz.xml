@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="GeekQuiz">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Game JAR/GeekQuiz.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

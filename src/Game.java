@@ -147,6 +147,21 @@ public class Game {
             System.out.println("Mal");
         }
 
+        //Question 11
+        String[]question11 = {"Una distribucion de Linux", "Un sistema operativo", "Una distro de GNU/Linux","Una distro de Ubuntu"};
+        x = JOptionPane.showOptionDialog(null,"¿Que es KDE Neon? ","Geek Quiz",0,JOptionPane.QUESTION_MESSAGE, null,question11,"");
+        if(x == 2){
+            //The player answer correctly
+            points++;
+            System.out.println("Correcto");
+        }
+        else{
+            //The player answer wrong
+            errorCount++;
+            System.out.println("Mal");
+        }
+
+
 
 
 
