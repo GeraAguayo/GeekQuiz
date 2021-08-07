@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -7,10 +8,12 @@ public class Window extends JFrame{
     private JPanel panel;
     private JButton btnStart;
     private JLabel etqSubtitle;
+    private JLabel etqMessage;
 
     //Constructor method
     public Window(){
-        this.setTitle("Geek Quest");
+        this.setTitle("Geek Quiz");
+        this.setIconImage(Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("Images/geekQuiz.ico")));
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setContentPane(panel);
         this.pack();
@@ -24,9 +27,6 @@ public class Window extends JFrame{
 
                 Game game = new Game();
                 game.startGame();
-
-
-
             }
         });
     }

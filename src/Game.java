@@ -4,6 +4,7 @@ public class Game {
     int x;
     int points = 0;
     int errorCount = 0;
+    String message;
 
     public void startGame(){
 
@@ -161,19 +162,36 @@ public class Game {
             System.out.println("Mal");
         }
 
-
-
-
+        //Method to set evaluations to the user
+        if(points == 10){
+            message = "Demonios, sabes mucho... Quiza demasiado bro";
+        }
+        else if(points == 11){
+            message = "GG, partida perfecta";
+        }
+        else if(points == 9){
+            message = "Nada mal, pero mis respuestas si son perfectas";
+        }
+        else if( points == 8){
+            message = "Nada mal para un noob";
+        }
+        else if(points == 7){
+            message = "Al parecer no eres un verdadero geek";
+        }
+        else if(points == 5){
+            message = "Que pasa contigo?, acaso utilizas Windows Vista?";
+        }
+        else if(points <= 4){
+            message = "Un rendimiento desastrozo";
+        }
 
         //Final results (Test code)
         JOptionPane.showMessageDialog(null,"Puntuacion final:" +
                 "\n" +
                 "Aciertos: "+points+
                 "\n" +
-                "Errores: "+errorCount);
-
-
-
-
+                "Errores: "+errorCount+
+                "\n"+
+                message);
     }
 }
