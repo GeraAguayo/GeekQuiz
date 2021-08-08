@@ -2,7 +2,7 @@
 # Guia de instalacion
 Paso 1: Descargue Java desde el sitio oficial
 
-        https://www.java.com/es/download/
+        https://www.oracle.com/java/technologies/javase-jdk16-downloads.html
 Paso 2: Descargue el repositorio y busque el archivo que se encuentra en:
 
         Game JAR/ GeekQuiz.jar
